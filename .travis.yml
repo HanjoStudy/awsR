@@ -22,7 +22,3 @@ after_success:
 - R -q -e 'library("covr");codecov()'
 - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && test
   $DRAT_DEPLOY == "true" && bash drat.sh
-- R -q -e "travisci::restart_last_build('cloudyr/awspack')"
-env:
-  global:
-    secure: ZuFPRGKmR8wOAjeHqJHet0J97GL7BivMGlR49bS5auXomse2y6DVivaokC6UzU4kYCnTFaxeqsg/XmV3cz2XfRzn1xCYI5M5t/1Qmf/JxB8YjTcl11su197Kwkdhwf4Gitju6eo2PH2DjEP4k/uQ5fcyIJosMo4HLBE5U0Mgi/c=
